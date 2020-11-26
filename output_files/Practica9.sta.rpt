@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Practica9
-Thu Nov 26 00:16:51 2020
+Thu Nov 26 09:27:01 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -155,34 +155,34 @@ No paths to report.
 +--------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                              ; To Node                                                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; -0.921 ; estado_act.EP0                                         ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.959      ;
-; -0.895 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.933      ;
-; -0.784 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.822      ;
-; -0.777 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP01                                        ; clk          ; clk         ; 1.000        ; 0.000      ; 1.815      ;
-; -0.756 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.794      ;
-; -0.721 ; estado_act.EP01                                        ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.759      ;
-; -0.711 ; estado_act.EP0110                                      ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.749      ;
-; -0.694 ; estado_act.EP0110                                      ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.732      ;
-; -0.675 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP01                                        ; clk          ; clk         ; 1.000        ; 0.000      ; 1.713      ;
-; -0.666 ; estado_act.Reposo                                      ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.704      ;
-; -0.532 ; estado_act.EP0110                                      ; estado_act.EP01                                        ; clk          ; clk         ; 1.000        ; 0.000      ; 1.570      ;
-; -0.508 ; estado_act.EP01                                        ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.546      ;
-; -0.370 ; estado_act.EP0                                         ; estado_act.EP01                                        ; clk          ; clk         ; 1.000        ; 0.000      ; 1.408      ;
-; -0.349 ; estado_act.EP011                                       ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.387      ;
-; -0.346 ; estado_act.Reposo                                      ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.384      ;
-; -0.272 ; estado_act.EP01                                        ; estado_act.EP011                                       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.310      ;
-; -0.268 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.306      ;
-; -0.232 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP0110                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.270      ;
-; -0.221 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP0110                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.259      ;
-; -0.212 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP011                                       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.250      ;
+; -0.921 ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.959      ;
+; -0.895 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.933      ;
+; -0.784 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.822      ;
+; -0.777 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 1.000        ; 0.000      ; 1.815      ;
+; -0.756 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.794      ;
+; -0.721 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.759      ;
+; -0.711 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.749      ;
+; -0.694 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.732      ;
+; -0.675 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 1.000        ; 0.000      ; 1.713      ;
+; -0.666 ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.704      ;
+; -0.532 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 1.000        ; 0.000      ; 1.570      ;
+; -0.508 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.546      ;
+; -0.370 ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 1.000        ; 0.000      ; 1.408      ;
+; -0.349 ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.387      ;
+; -0.346 ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.384      ;
+; -0.272 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.310      ;
+; -0.268 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 1.306      ;
+; -0.232 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.270      ;
+; -0.221 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.259      ;
+; -0.212 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.250      ;
 ; -0.179 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Esp0  ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; clk          ; clk         ; 1.000        ; 0.000      ; 1.217      ;
 ; -0.090 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Esp0  ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; clk          ; clk         ; 1.000        ; 0.000      ; 1.128      ;
-; 0.074  ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP011                                       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.964      ;
-; 0.124  ; estado_act.EP011                                       ; estado_act.EP0110                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.914      ;
-; 0.307  ; estado_act.EP01                                        ; estado_act.EP01                                        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.731      ;
-; 0.307  ; estado_act.EP0                                         ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.731      ;
-; 0.307  ; estado_act.EP011                                       ; estado_act.EP011                                       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.731      ;
-; 0.307  ; estado_act.EP0110                                      ; estado_act.EP0110                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.731      ;
+; 0.074  ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.964      ;
+; 0.124  ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.914      ;
+; 0.307  ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.731      ;
+; 0.307  ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.731      ;
+; 0.307  ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.731      ;
+; 0.307  ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.731      ;
 +--------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -191,34 +191,34 @@ No paths to report.
 +-------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                              ; To Node                                                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.445 ; estado_act.EP0                                         ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
-; 0.445 ; estado_act.EP01                                        ; estado_act.EP01                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
-; 0.445 ; estado_act.EP011                                       ; estado_act.EP011                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
-; 0.445 ; estado_act.EP0110                                      ; estado_act.EP0110                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
-; 0.628 ; estado_act.EP011                                       ; estado_act.EP0110                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.914      ;
-; 0.678 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP011                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.964      ;
+; 0.445 ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.628 ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.914      ;
+; 0.678 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.964      ;
 ; 0.842 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Esp0  ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; clk          ; clk         ; 0.000        ; 0.000      ; 1.128      ;
 ; 0.931 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Esp0  ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; clk          ; clk         ; 0.000        ; 0.000      ; 1.217      ;
-; 0.964 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP011                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.250      ;
-; 0.973 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP0110                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.259      ;
-; 0.984 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP0110                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.270      ;
-; 0.995 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP01                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.281      ;
-; 1.020 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.306      ;
-; 1.024 ; estado_act.EP01                                        ; estado_act.EP011                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.310      ;
-; 1.036 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP01                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.322      ;
-; 1.063 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.349      ;
-; 1.063 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.349      ;
-; 1.098 ; estado_act.Reposo                                      ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.384      ;
-; 1.101 ; estado_act.EP011                                       ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.387      ;
-; 1.122 ; estado_act.EP0                                         ; estado_act.EP01                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.408      ;
-; 1.260 ; estado_act.EP01                                        ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.546      ;
-; 1.284 ; estado_act.EP0110                                      ; estado_act.EP01                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.570      ;
-; 1.296 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.582      ;
-; 1.418 ; estado_act.Reposo                                      ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.704      ;
-; 1.446 ; estado_act.EP0110                                      ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.732      ;
-; 1.463 ; estado_act.EP0110                                      ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.749      ;
-; 1.473 ; estado_act.EP01                                        ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.759      ;
-; 1.673 ; estado_act.EP0                                         ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.959      ;
+; 0.964 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.250      ;
+; 0.973 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.259      ;
+; 0.984 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.270      ;
+; 0.995 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.281      ;
+; 1.020 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.306      ;
+; 1.024 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.310      ;
+; 1.036 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.322      ;
+; 1.063 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.349      ;
+; 1.063 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.349      ;
+; 1.098 ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.384      ;
+; 1.101 ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.387      ;
+; 1.122 ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.408      ;
+; 1.260 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.546      ;
+; 1.284 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.570      ;
+; 1.296 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.582      ;
+; 1.418 ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.704      ;
+; 1.446 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.732      ;
+; 1.463 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.749      ;
+; 1.473 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.759      ;
+; 1.673 ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.959      ;
 +-------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -236,16 +236,16 @@ No paths to report.
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Esp0  ;
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Fall       ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ;
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Fall       ; estado_act.EP0                                         ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; estado_act.EP0                                         ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Fall       ; estado_act.EP01                                        ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; estado_act.EP01                                        ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Fall       ; estado_act.EP011                                       ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; estado_act.EP011                                       ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Fall       ; estado_act.EP0110                                      ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; estado_act.EP0110                                      ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Fall       ; estado_act.Reposo                                      ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; estado_act.Reposo                                      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP0         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP0         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP01        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP01        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP011       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP011       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco_1|estado_act.Esp0|clk                   ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco_1|estado_act.Esp0|clk                   ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco_1|estado_act.Pulso|clk                  ;
@@ -254,22 +254,22 @@ No paths to report.
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco_2|estado_act.Esp0|clk                   ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco_2|estado_act.Pulso|clk                  ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco_2|estado_act.Pulso|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; Detector_secu|estado_act.EP0110|clk                    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; Detector_secu|estado_act.EP0110|clk                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; Detector_secu|estado_act.EP011|clk                     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; Detector_secu|estado_act.EP011|clk                     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; Detector_secu|estado_act.EP01|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; Detector_secu|estado_act.EP01|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; Detector_secu|estado_act.EP0|clk                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; Detector_secu|estado_act.EP0|clk                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; Detector_secu|estado_act.Reposo|clk                    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; Detector_secu|estado_act.Reposo|clk                    ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout                                            ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout                                            ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]                                   ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]                                   ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk                                     ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk                                     ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; estado_act.EP0110|clk                                  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; estado_act.EP0110|clk                                  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; estado_act.EP011|clk                                   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; estado_act.EP011|clk                                   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; estado_act.EP01|clk                                    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; estado_act.EP01|clk                                    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; estado_act.EP0|clk                                     ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; estado_act.EP0|clk                                     ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; estado_act.Reposo|clk                                  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; estado_act.Reposo|clk                                  ;
 +--------+--------------+----------------+------------------+-------+------------+--------------------------------------------------------+
 
 
@@ -298,7 +298,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; red       ; clk        ; 6.577 ; 6.577 ; Fall       ; clk             ;
+; espera    ; clk        ; 6.577 ; 6.577 ; Fall       ; clk             ;
 ; valid     ; clk        ; 6.577 ; 6.577 ; Fall       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -308,7 +308,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; red       ; clk        ; 6.577 ; 6.577 ; Fall       ; clk             ;
+; espera    ; clk        ; 6.577 ; 6.577 ; Fall       ; clk             ;
 ; valid     ; clk        ; 6.577 ; 6.577 ; Fall       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -357,34 +357,34 @@ No paths to report.
 +-------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                              ; To Node                                                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.265 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.767      ;
-; 0.268 ; estado_act.EP0                                         ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.764      ;
-; 0.311 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.721      ;
-; 0.311 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP01                                        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.721      ;
-; 0.313 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.719      ;
-; 0.326 ; estado_act.EP0110                                      ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.706      ;
-; 0.327 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP01                                        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.705      ;
-; 0.341 ; estado_act.EP01                                        ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.691      ;
-; 0.342 ; estado_act.EP0110                                      ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.690      ;
-; 0.349 ; estado_act.Reposo                                      ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.683      ;
-; 0.405 ; estado_act.EP0110                                      ; estado_act.EP01                                        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.627      ;
-; 0.417 ; estado_act.EP01                                        ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.615      ;
-; 0.459 ; estado_act.EP0                                         ; estado_act.EP01                                        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.573      ;
-; 0.466 ; estado_act.EP011                                       ; estado_act.Reposo                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.566      ;
-; 0.471 ; estado_act.Reposo                                      ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.561      ;
-; 0.482 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP0110                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.550      ;
-; 0.486 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP011                                       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.546      ;
-; 0.494 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.538      ;
-; 0.494 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP0110                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.538      ;
-; 0.498 ; estado_act.EP01                                        ; estado_act.EP011                                       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.534      ;
+; 0.265 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.767      ;
+; 0.268 ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.764      ;
+; 0.311 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.721      ;
+; 0.311 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.721      ;
+; 0.313 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.719      ;
+; 0.326 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.706      ;
+; 0.327 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.705      ;
+; 0.341 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.691      ;
+; 0.342 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.690      ;
+; 0.349 ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.683      ;
+; 0.405 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.627      ;
+; 0.417 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.615      ;
+; 0.459 ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.573      ;
+; 0.466 ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.566      ;
+; 0.471 ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.561      ;
+; 0.482 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.550      ;
+; 0.486 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.546      ;
+; 0.494 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.538      ;
+; 0.494 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.538      ;
+; 0.498 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.534      ;
 ; 0.525 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Esp0  ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; clk          ; clk         ; 1.000        ; 0.000      ; 0.507      ;
 ; 0.561 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Esp0  ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; clk          ; clk         ; 1.000        ; 0.000      ; 0.471      ;
-; 0.606 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP011                                       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.426      ;
-; 0.634 ; estado_act.EP011                                       ; estado_act.EP0110                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.398      ;
-; 0.665 ; estado_act.EP0                                         ; estado_act.EP0                                         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.367      ;
-; 0.665 ; estado_act.EP01                                        ; estado_act.EP01                                        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.367      ;
-; 0.665 ; estado_act.EP0110                                      ; estado_act.EP0110                                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.367      ;
-; 0.665 ; estado_act.EP011                                       ; estado_act.EP011                                       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.606 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.426      ;
+; 0.634 ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.398      ;
+; 0.665 ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.367      ;
 +-------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -393,34 +393,34 @@ No paths to report.
 +-------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                              ; To Node                                                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.215 ; estado_act.EP0                                         ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; estado_act.EP01                                        ; estado_act.EP01                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; estado_act.EP011                                       ; estado_act.EP011                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; estado_act.EP0110                                      ; estado_act.EP0110                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.246 ; estado_act.EP011                                       ; estado_act.EP0110                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.398      ;
-; 0.274 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP011                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.426      ;
+; 0.215 ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.246 ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.398      ;
+; 0.274 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.426      ;
 ; 0.319 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Esp0  ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; clk          ; clk         ; 0.000        ; 0.000      ; 0.471      ;
 ; 0.355 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Esp0  ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
-; 0.382 ; estado_act.EP01                                        ; estado_act.EP011                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.534      ;
-; 0.386 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.538      ;
-; 0.386 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP0110                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.538      ;
-; 0.391 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP01                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.543      ;
-; 0.394 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.EP011                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.546      ;
-; 0.398 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.550      ;
-; 0.398 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP0110                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.550      ;
-; 0.403 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.EP01                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.555      ;
-; 0.409 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.561      ;
-; 0.409 ; estado_act.Reposo                                      ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.561      ;
-; 0.414 ; estado_act.EP011                                       ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.566      ;
-; 0.421 ; estado_act.EP0                                         ; estado_act.EP01                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.573      ;
-; 0.463 ; estado_act.EP01                                        ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.615      ;
-; 0.475 ; estado_act.EP0110                                      ; estado_act.EP01                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.627      ;
-; 0.486 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.638      ;
-; 0.531 ; estado_act.Reposo                                      ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.683      ;
-; 0.538 ; estado_act.EP0110                                      ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.690      ;
-; 0.539 ; estado_act.EP01                                        ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.691      ;
-; 0.554 ; estado_act.EP0110                                      ; estado_act.EP0                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.706      ;
-; 0.612 ; estado_act.EP0                                         ; estado_act.Reposo                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.764      ;
+; 0.382 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.534      ;
+; 0.386 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.538      ;
+; 0.386 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.538      ;
+; 0.391 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.543      ;
+; 0.394 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.546      ;
+; 0.398 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.550      ;
+; 0.398 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.550      ;
+; 0.403 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.555      ;
+; 0.409 ; DetectorFlancobajada:DetectorFlanco_1|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.561      ;
+; 0.409 ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.561      ;
+; 0.414 ; DetectorSecuencia:Detector_secu|estado_act.EP011       ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.566      ;
+; 0.421 ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.573      ;
+; 0.463 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.615      ;
+; 0.475 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.627      ;
+; 0.486 ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.638      ;
+; 0.531 ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.683      ;
+; 0.538 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.690      ;
+; 0.539 ; DetectorSecuencia:Detector_secu|estado_act.EP01        ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.691      ;
+; 0.554 ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.706      ;
+; 0.612 ; DetectorSecuencia:Detector_secu|estado_act.EP0         ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.764      ;
 +-------+--------------------------------------------------------+--------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -438,16 +438,16 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Esp0  ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; DetectorFlancobajada:DetectorFlanco_2|estado_act.Pulso ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; estado_act.EP0                                         ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; estado_act.EP0                                         ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; estado_act.EP01                                        ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; estado_act.EP01                                        ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; estado_act.EP011                                       ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; estado_act.EP011                                       ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; estado_act.EP0110                                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; estado_act.EP0110                                      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; estado_act.Reposo                                      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; estado_act.Reposo                                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP0         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP0         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP01        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP01        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP011       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP011       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.EP0110      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; DetectorSecuencia:Detector_secu|estado_act.Reposo      ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco_1|estado_act.Esp0|clk                   ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco_1|estado_act.Esp0|clk                   ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco_1|estado_act.Pulso|clk                  ;
@@ -456,22 +456,22 @@ No paths to report.
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco_2|estado_act.Esp0|clk                   ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco_2|estado_act.Pulso|clk                  ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco_2|estado_act.Pulso|clk                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; Detector_secu|estado_act.EP0110|clk                    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; Detector_secu|estado_act.EP0110|clk                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; Detector_secu|estado_act.EP011|clk                     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; Detector_secu|estado_act.EP011|clk                     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; Detector_secu|estado_act.EP01|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; Detector_secu|estado_act.EP01|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; Detector_secu|estado_act.EP0|clk                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; Detector_secu|estado_act.EP0|clk                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; Detector_secu|estado_act.Reposo|clk                    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; Detector_secu|estado_act.Reposo|clk                    ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout                                            ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout                                            ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]                                   ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]                                   ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk                                     ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk                                     ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; estado_act.EP0110|clk                                  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; estado_act.EP0110|clk                                  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; estado_act.EP011|clk                                   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; estado_act.EP011|clk                                   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; estado_act.EP01|clk                                    ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; estado_act.EP01|clk                                    ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; estado_act.EP0|clk                                     ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; estado_act.EP0|clk                                     ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; estado_act.Reposo|clk                                  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; estado_act.Reposo|clk                                  ;
 +--------+--------------+----------------+------------------+-------+------------+--------------------------------------------------------+
 
 
@@ -500,7 +500,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; red       ; clk        ; 3.616 ; 3.616 ; Fall       ; clk             ;
+; espera    ; clk        ; 3.616 ; 3.616 ; Fall       ; clk             ;
 ; valid     ; clk        ; 3.616 ; 3.616 ; Fall       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -510,7 +510,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; red       ; clk        ; 3.616 ; 3.616 ; Fall       ; clk             ;
+; espera    ; clk        ; 3.616 ; 3.616 ; Fall       ; clk             ;
 ; valid     ; clk        ; 3.616 ; 3.616 ; Fall       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -552,7 +552,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; red       ; clk        ; 6.577 ; 6.577 ; Fall       ; clk             ;
+; espera    ; clk        ; 6.577 ; 6.577 ; Fall       ; clk             ;
 ; valid     ; clk        ; 6.577 ; 6.577 ; Fall       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -562,7 +562,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; red       ; clk        ; 3.616 ; 3.616 ; Fall       ; clk             ;
+; espera    ; clk        ; 3.616 ; 3.616 ; Fall       ; clk             ;
 ; valid     ; clk        ; 3.616 ; 3.616 ; Fall       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
@@ -619,7 +619,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 26 00:16:49 2020
+    Info: Processing started: Thu Nov 26 09:26:57 2020
 Info: Command: quartus_sta Practica9 -c Practica9
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -667,9 +667,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4555 megabytes
-    Info: Processing ended: Thu Nov 26 00:16:51 2020
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4544 megabytes
+    Info: Processing ended: Thu Nov 26 09:27:01 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 

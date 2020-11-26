@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "11/26/2020 00:16:52"
+-- DATE "11/26/2020 09:27:03"
 
 -- 
 -- Device: Altera EP2C20F484C7 Package FBGA484
@@ -38,13 +38,13 @@ ENTITY 	Practica9 IS
 	p1 : IN std_logic;
 	p0 : IN std_logic;
 	valid : OUT std_logic;
-	red : OUT std_logic
+	espera : OUT std_logic
 	);
 END Practica9;
 
 -- Design Ports Information
 -- valid	=>  Location: PIN_D1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- red	=>  Location: PIN_D2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- espera	=>  Location: PIN_D2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 -- clk	=>  Location: PIN_M1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- reset_n	=>  Location: PIN_M2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- p0	=>  Location: PIN_F3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
@@ -66,19 +66,19 @@ SIGNAL ww_clk : std_logic;
 SIGNAL ww_p1 : std_logic;
 SIGNAL ww_p0 : std_logic;
 SIGNAL ww_valid : std_logic;
-SIGNAL ww_red : std_logic;
+SIGNAL ww_espera : std_logic;
 SIGNAL \clk~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \reset_n~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \estado_act.EP01~regout\ : std_logic;
-SIGNAL \estado_act.EP0~regout\ : std_logic;
-SIGNAL \Selector2~0_combout\ : std_logic;
-SIGNAL \Selector2~1_combout\ : std_logic;
-SIGNAL \estado_act.Reposo~regout\ : std_logic;
-SIGNAL \Selector1~0_combout\ : std_logic;
-SIGNAL \Selector1~1_combout\ : std_logic;
-SIGNAL \Selector0~0_combout\ : std_logic;
-SIGNAL \Selector0~1_combout\ : std_logic;
-SIGNAL \Selector0~2_combout\ : std_logic;
+SIGNAL \Detector_secu|estado_act.EP01~regout\ : std_logic;
+SIGNAL \Detector_secu|estado_act.EP0~regout\ : std_logic;
+SIGNAL \Detector_secu|Selector2~0_combout\ : std_logic;
+SIGNAL \Detector_secu|Selector2~1_combout\ : std_logic;
+SIGNAL \Detector_secu|estado_act.Reposo~regout\ : std_logic;
+SIGNAL \Detector_secu|Selector1~0_combout\ : std_logic;
+SIGNAL \Detector_secu|Selector1~1_combout\ : std_logic;
+SIGNAL \Detector_secu|Selector0~0_combout\ : std_logic;
+SIGNAL \Detector_secu|Selector0~1_combout\ : std_logic;
+SIGNAL \Detector_secu|Selector0~2_combout\ : std_logic;
 SIGNAL \clk~combout\ : std_logic;
 SIGNAL \clk~clkctrl_outclk\ : std_logic;
 SIGNAL \p0~combout\ : std_logic;
@@ -93,12 +93,12 @@ SIGNAL \DetectorFlanco_1|estado_act.Esp0~0_combout\ : std_logic;
 SIGNAL \DetectorFlanco_1|estado_act.Esp0~regout\ : std_logic;
 SIGNAL \DetectorFlanco_1|Selector1~0_combout\ : std_logic;
 SIGNAL \DetectorFlanco_1|estado_act.Pulso~regout\ : std_logic;
-SIGNAL \Selector3~0_combout\ : std_logic;
-SIGNAL \estado_act.EP011~regout\ : std_logic;
-SIGNAL \Selector4~0_combout\ : std_logic;
-SIGNAL \estado_act.EP0110~regout\ : std_logic;
+SIGNAL \Detector_secu|Selector3~0_combout\ : std_logic;
+SIGNAL \Detector_secu|estado_act.EP011~regout\ : std_logic;
+SIGNAL \Detector_secu|Selector4~0_combout\ : std_logic;
+SIGNAL \Detector_secu|estado_act.EP0110~regout\ : std_logic;
 SIGNAL \ALT_INV_reset_n~clkctrl_outclk\ : std_logic;
-SIGNAL \ALT_INV_estado_act.EP0110~regout\ : std_logic;
+SIGNAL \Detector_secu|ALT_INV_estado_act.EP0110~regout\ : std_logic;
 SIGNAL \ALT_INV_clk~clkctrl_outclk\ : std_logic;
 
 BEGIN
@@ -108,7 +108,7 @@ ww_clk <= clk;
 ww_p1 <= p1;
 ww_p0 <= p0;
 valid <= ww_valid;
-red <= ww_red;
+espera <= ww_espera;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
@@ -117,33 +117,33 @@ ww_devpor <= devpor;
 
 \reset_n~clkctrl_INCLK_bus\ <= (gnd & gnd & gnd & \reset_n~combout\);
 \ALT_INV_reset_n~clkctrl_outclk\ <= NOT \reset_n~clkctrl_outclk\;
-\ALT_INV_estado_act.EP0110~regout\ <= NOT \estado_act.EP0110~regout\;
+\Detector_secu|ALT_INV_estado_act.EP0110~regout\ <= NOT \Detector_secu|estado_act.EP0110~regout\;
 \ALT_INV_clk~clkctrl_outclk\ <= NOT \clk~clkctrl_outclk\;
 
 -- Location: LCFF_X1_Y22_N17
-\estado_act.EP01\ : cycloneii_lcell_ff
+\Detector_secu|estado_act.EP01\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \ALT_INV_clk~clkctrl_outclk\,
-	datain => \Selector2~1_combout\,
+	datain => \Detector_secu|Selector2~1_combout\,
 	aclr => \ALT_INV_reset_n~clkctrl_outclk\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \estado_act.EP01~regout\);
+	regout => \Detector_secu|estado_act.EP01~regout\);
 
 -- Location: LCFF_X1_Y22_N7
-\estado_act.EP0\ : cycloneii_lcell_ff
+\Detector_secu|estado_act.EP0\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \ALT_INV_clk~clkctrl_outclk\,
-	datain => \Selector1~1_combout\,
+	datain => \Detector_secu|Selector1~1_combout\,
 	aclr => \ALT_INV_reset_n~clkctrl_outclk\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \estado_act.EP0~regout\);
+	regout => \Detector_secu|estado_act.EP0~regout\);
 
 -- Location: LCCOMB_X1_Y22_N0
-\Selector2~0\ : cycloneii_lcell_comb
+\Detector_secu|Selector2~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Selector2~0_combout\ = (\DetectorFlanco_1|estado_act.Pulso~regout\ & (!\DetectorFlanco_2|estado_act.Pulso~regout\ & ((\estado_act.EP0110~regout\) # (\estado_act.EP0~regout\))))
+-- \Detector_secu|Selector2~0_combout\ = (\DetectorFlanco_1|estado_act.Pulso~regout\ & (!\DetectorFlanco_2|estado_act.Pulso~regout\ & ((\Detector_secu|estado_act.EP0110~regout\) # (\Detector_secu|estado_act.EP0~regout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -153,14 +153,14 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \DetectorFlanco_1|estado_act.Pulso~regout\,
 	datab => \DetectorFlanco_2|estado_act.Pulso~regout\,
-	datac => \estado_act.EP0110~regout\,
-	datad => \estado_act.EP0~regout\,
-	combout => \Selector2~0_combout\);
+	datac => \Detector_secu|estado_act.EP0110~regout\,
+	datad => \Detector_secu|estado_act.EP0~regout\,
+	combout => \Detector_secu|Selector2~0_combout\);
 
 -- Location: LCCOMB_X1_Y22_N16
-\Selector2~1\ : cycloneii_lcell_comb
+\Detector_secu|Selector2~1\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Selector2~1_combout\ = (\Selector2~0_combout\) # ((!\DetectorFlanco_1|estado_act.Pulso~regout\ & (!\DetectorFlanco_2|estado_act.Pulso~regout\ & \estado_act.EP01~regout\)))
+-- \Detector_secu|Selector2~1_combout\ = (\Detector_secu|Selector2~0_combout\) # ((!\DetectorFlanco_1|estado_act.Pulso~regout\ & (!\DetectorFlanco_2|estado_act.Pulso~regout\ & \Detector_secu|estado_act.EP01~regout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -170,24 +170,24 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \DetectorFlanco_1|estado_act.Pulso~regout\,
 	datab => \DetectorFlanco_2|estado_act.Pulso~regout\,
-	datac => \estado_act.EP01~regout\,
-	datad => \Selector2~0_combout\,
-	combout => \Selector2~1_combout\);
+	datac => \Detector_secu|estado_act.EP01~regout\,
+	datad => \Detector_secu|Selector2~0_combout\,
+	combout => \Detector_secu|Selector2~1_combout\);
 
 -- Location: LCFF_X1_Y22_N27
-\estado_act.Reposo\ : cycloneii_lcell_ff
+\Detector_secu|estado_act.Reposo\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \ALT_INV_clk~clkctrl_outclk\,
-	datain => \Selector0~2_combout\,
+	datain => \Detector_secu|Selector0~2_combout\,
 	aclr => \ALT_INV_reset_n~clkctrl_outclk\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \estado_act.Reposo~regout\);
+	regout => \Detector_secu|estado_act.Reposo~regout\);
 
 -- Location: LCCOMB_X1_Y22_N28
-\Selector1~0\ : cycloneii_lcell_comb
+\Detector_secu|Selector1~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Selector1~0_combout\ = (\estado_act.Reposo~regout\ & ((\DetectorFlanco_1|estado_act.Pulso~regout\) # ((!\estado_act.EP0110~regout\ & !\estado_act.EP01~regout\))))
+-- \Detector_secu|Selector1~0_combout\ = (\Detector_secu|estado_act.Reposo~regout\ & ((\DetectorFlanco_1|estado_act.Pulso~regout\) # ((!\Detector_secu|estado_act.EP0110~regout\ & !\Detector_secu|estado_act.EP01~regout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -196,16 +196,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \DetectorFlanco_1|estado_act.Pulso~regout\,
-	datab => \estado_act.EP0110~regout\,
-	datac => \estado_act.EP01~regout\,
-	datad => \estado_act.Reposo~regout\,
-	combout => \Selector1~0_combout\);
+	datab => \Detector_secu|estado_act.EP0110~regout\,
+	datac => \Detector_secu|estado_act.EP01~regout\,
+	datad => \Detector_secu|estado_act.Reposo~regout\,
+	combout => \Detector_secu|Selector1~0_combout\);
 
 -- Location: LCCOMB_X1_Y22_N6
-\Selector1~1\ : cycloneii_lcell_comb
+\Detector_secu|Selector1~1\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Selector1~1_combout\ = (\DetectorFlanco_1|estado_act.Pulso~regout\ & (((\estado_act.EP0~regout\ & !\Selector1~0_combout\)))) # (!\DetectorFlanco_1|estado_act.Pulso~regout\ & ((\estado_act.EP0~regout\) # ((\DetectorFlanco_2|estado_act.Pulso~regout\ & 
--- !\Selector1~0_combout\))))
+-- \Detector_secu|Selector1~1_combout\ = (\DetectorFlanco_1|estado_act.Pulso~regout\ & (((\Detector_secu|estado_act.EP0~regout\ & !\Detector_secu|Selector1~0_combout\)))) # (!\DetectorFlanco_1|estado_act.Pulso~regout\ & 
+-- ((\Detector_secu|estado_act.EP0~regout\) # ((\DetectorFlanco_2|estado_act.Pulso~regout\ & !\Detector_secu|Selector1~0_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -215,15 +215,15 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \DetectorFlanco_1|estado_act.Pulso~regout\,
 	datab => \DetectorFlanco_2|estado_act.Pulso~regout\,
-	datac => \estado_act.EP0~regout\,
-	datad => \Selector1~0_combout\,
-	combout => \Selector1~1_combout\);
+	datac => \Detector_secu|estado_act.EP0~regout\,
+	datad => \Detector_secu|Selector1~0_combout\,
+	combout => \Detector_secu|Selector1~1_combout\);
 
 -- Location: LCCOMB_X1_Y22_N2
-\Selector0~0\ : cycloneii_lcell_comb
+\Detector_secu|Selector0~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Selector0~0_combout\ = (\DetectorFlanco_1|estado_act.Pulso~regout\ & (((\estado_act.EP011~regout\)) # (!\estado_act.Reposo~regout\))) # (!\DetectorFlanco_1|estado_act.Pulso~regout\ & (!\estado_act.Reposo~regout\ & 
--- (!\DetectorFlanco_2|estado_act.Pulso~regout\)))
+-- \Detector_secu|Selector0~0_combout\ = (\DetectorFlanco_1|estado_act.Pulso~regout\ & (((\Detector_secu|estado_act.EP011~regout\)) # (!\Detector_secu|estado_act.Reposo~regout\))) # (!\DetectorFlanco_1|estado_act.Pulso~regout\ & 
+-- (!\Detector_secu|estado_act.Reposo~regout\ & (!\DetectorFlanco_2|estado_act.Pulso~regout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -232,15 +232,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \DetectorFlanco_1|estado_act.Pulso~regout\,
-	datab => \estado_act.Reposo~regout\,
+	datab => \Detector_secu|estado_act.Reposo~regout\,
 	datac => \DetectorFlanco_2|estado_act.Pulso~regout\,
-	datad => \estado_act.EP011~regout\,
-	combout => \Selector0~0_combout\);
+	datad => \Detector_secu|estado_act.EP011~regout\,
+	combout => \Detector_secu|Selector0~0_combout\);
 
 -- Location: LCCOMB_X1_Y22_N24
-\Selector0~1\ : cycloneii_lcell_comb
+\Detector_secu|Selector0~1\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Selector0~1_combout\ = (\DetectorFlanco_2|estado_act.Pulso~regout\ & ((\estado_act.EP0~regout\) # ((\estado_act.EP0110~regout\) # (\estado_act.EP01~regout\))))
+-- \Detector_secu|Selector0~1_combout\ = (\DetectorFlanco_2|estado_act.Pulso~regout\ & ((\Detector_secu|estado_act.EP0~regout\) # ((\Detector_secu|estado_act.EP0110~regout\) # (\Detector_secu|estado_act.EP01~regout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -248,16 +248,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \estado_act.EP0~regout\,
+	dataa => \Detector_secu|estado_act.EP0~regout\,
 	datab => \DetectorFlanco_2|estado_act.Pulso~regout\,
-	datac => \estado_act.EP0110~regout\,
-	datad => \estado_act.EP01~regout\,
-	combout => \Selector0~1_combout\);
+	datac => \Detector_secu|estado_act.EP0110~regout\,
+	datad => \Detector_secu|estado_act.EP01~regout\,
+	combout => \Detector_secu|Selector0~1_combout\);
 
 -- Location: LCCOMB_X1_Y22_N26
-\Selector0~2\ : cycloneii_lcell_comb
+\Detector_secu|Selector0~2\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Selector0~2_combout\ = (!\Selector0~0_combout\ & ((!\Selector0~1_combout\) # (!\DetectorFlanco_1|estado_act.Pulso~regout\)))
+-- \Detector_secu|Selector0~2_combout\ = (!\Detector_secu|Selector0~0_combout\ & ((!\Detector_secu|Selector0~1_combout\) # (!\DetectorFlanco_1|estado_act.Pulso~regout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -266,9 +266,9 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \DetectorFlanco_1|estado_act.Pulso~regout\,
-	datac => \Selector0~1_combout\,
-	datad => \Selector0~0_combout\,
-	combout => \Selector0~2_combout\);
+	datac => \Detector_secu|Selector0~1_combout\,
+	datad => \Detector_secu|Selector0~0_combout\,
+	combout => \Detector_secu|Selector0~2_combout\);
 
 -- Location: PIN_M1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \clk~I\ : cycloneii_io
@@ -499,9 +499,10 @@ PORT MAP (
 	regout => \DetectorFlanco_1|estado_act.Pulso~regout\);
 
 -- Location: LCCOMB_X1_Y22_N22
-\Selector3~0\ : cycloneii_lcell_comb
+\Detector_secu|Selector3~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Selector3~0_combout\ = (!\DetectorFlanco_2|estado_act.Pulso~regout\ & ((\DetectorFlanco_1|estado_act.Pulso~regout\ & (\estado_act.EP01~regout\)) # (!\DetectorFlanco_1|estado_act.Pulso~regout\ & ((\estado_act.EP011~regout\)))))
+-- \Detector_secu|Selector3~0_combout\ = (!\DetectorFlanco_2|estado_act.Pulso~regout\ & ((\DetectorFlanco_1|estado_act.Pulso~regout\ & (\Detector_secu|estado_act.EP01~regout\)) # (!\DetectorFlanco_1|estado_act.Pulso~regout\ & 
+-- ((\Detector_secu|estado_act.EP011~regout\)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -509,26 +510,27 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \estado_act.EP01~regout\,
+	dataa => \Detector_secu|estado_act.EP01~regout\,
 	datab => \DetectorFlanco_2|estado_act.Pulso~regout\,
-	datac => \estado_act.EP011~regout\,
+	datac => \Detector_secu|estado_act.EP011~regout\,
 	datad => \DetectorFlanco_1|estado_act.Pulso~regout\,
-	combout => \Selector3~0_combout\);
+	combout => \Detector_secu|Selector3~0_combout\);
 
 -- Location: LCFF_X1_Y22_N23
-\estado_act.EP011\ : cycloneii_lcell_ff
+\Detector_secu|estado_act.EP011\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \ALT_INV_clk~clkctrl_outclk\,
-	datain => \Selector3~0_combout\,
+	datain => \Detector_secu|Selector3~0_combout\,
 	aclr => \ALT_INV_reset_n~clkctrl_outclk\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \estado_act.EP011~regout\);
+	regout => \Detector_secu|estado_act.EP011~regout\);
 
 -- Location: LCCOMB_X1_Y22_N4
-\Selector4~0\ : cycloneii_lcell_comb
+\Detector_secu|Selector4~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Selector4~0_combout\ = (!\DetectorFlanco_1|estado_act.Pulso~regout\ & ((\DetectorFlanco_2|estado_act.Pulso~regout\ & ((\estado_act.EP011~regout\))) # (!\DetectorFlanco_2|estado_act.Pulso~regout\ & (\estado_act.EP0110~regout\))))
+-- \Detector_secu|Selector4~0_combout\ = (!\DetectorFlanco_1|estado_act.Pulso~regout\ & ((\DetectorFlanco_2|estado_act.Pulso~regout\ & ((\Detector_secu|estado_act.EP011~regout\))) # (!\DetectorFlanco_2|estado_act.Pulso~regout\ & 
+-- (\Detector_secu|estado_act.EP0110~regout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -538,19 +540,19 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \DetectorFlanco_1|estado_act.Pulso~regout\,
 	datab => \DetectorFlanco_2|estado_act.Pulso~regout\,
-	datac => \estado_act.EP0110~regout\,
-	datad => \estado_act.EP011~regout\,
-	combout => \Selector4~0_combout\);
+	datac => \Detector_secu|estado_act.EP0110~regout\,
+	datad => \Detector_secu|estado_act.EP011~regout\,
+	combout => \Detector_secu|Selector4~0_combout\);
 
 -- Location: LCFF_X1_Y22_N5
-\estado_act.EP0110\ : cycloneii_lcell_ff
+\Detector_secu|estado_act.EP0110\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \ALT_INV_clk~clkctrl_outclk\,
-	datain => \Selector4~0_combout\,
+	datain => \Detector_secu|Selector4~0_combout\,
 	aclr => \ALT_INV_reset_n~clkctrl_outclk\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \estado_act.EP0110~regout\);
+	regout => \Detector_secu|estado_act.EP0110~regout\);
 
 -- Location: PIN_D1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \valid~I\ : cycloneii_io
@@ -571,7 +573,7 @@ GENERIC MAP (
 	output_sync_reset => "none")
 -- pragma translate_on
 PORT MAP (
-	datain => \estado_act.EP0110~regout\,
+	datain => \Detector_secu|estado_act.EP0110~regout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	devoe => ww_devoe,
@@ -579,7 +581,7 @@ PORT MAP (
 	padio => ww_valid);
 
 -- Location: PIN_D2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-\red~I\ : cycloneii_io
+\espera~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -597,12 +599,12 @@ GENERIC MAP (
 	output_sync_reset => "none")
 -- pragma translate_on
 PORT MAP (
-	datain => \ALT_INV_estado_act.EP0110~regout\,
+	datain => \Detector_secu|ALT_INV_estado_act.EP0110~regout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => VCC,
-	padio => ww_red);
+	padio => ww_espera);
 END structure;
 
 

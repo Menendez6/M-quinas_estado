@@ -1,14 +1,14 @@
 |Practica9
 reset_n => DetectorFlancobajada:DetectorFlanco_1.reset_n
 reset_n => DetectorFlancobajada:DetectorFlanco_2.reset_n
-reset_n => estado_act~3.DATAIN
+reset_n => DetectorSecuencia:Detector_secu.reset_n
 clk => DetectorFlancobajada:DetectorFlanco_1.clk
 clk => DetectorFlancobajada:DetectorFlanco_2.clk
-clk => estado_act~1.DATAIN
+clk => DetectorSecuencia:Detector_secu.clk
 p1 => DetectorFlancobajada:DetectorFlanco_1.e
 p0 => DetectorFlancobajada:DetectorFlanco_2.e
-valid <= valid.DB_MAX_OUTPUT_PORT_TYPE
-red <= red.DB_MAX_OUTPUT_PORT_TYPE
+valid <= DetectorSecuencia:Detector_secu.valid
+espera <= DetectorSecuencia:Detector_secu.espera
 
 
 |Practica9|DetectorFlancobajada:DetectorFlanco_1
@@ -37,5 +37,18 @@ e => Selector2.IN0
 reset_n => estado_act~3.DATAIN
 clk => estado_act~1.DATAIN
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica9|DetectorSecuencia:Detector_secu
+reset_n => estado_act~3.DATAIN
+clk => estado_act~1.DATAIN
+p1 => Equal0.IN0
+p1 => Equal1.IN0
+p1 => Equal2.IN1
+p0 => Equal0.IN1
+p0 => Equal1.IN1
+p0 => Equal2.IN0
+valid <= valid.DB_MAX_OUTPUT_PORT_TYPE
+espera <= espera.DB_MAX_OUTPUT_PORT_TYPE
 
 

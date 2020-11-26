@@ -1,0 +1,83 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Practica9_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Practica9.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity Practica9
+# -- Compiling architecture structure of Practica9
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/SistemasI/Practica9/Practica9.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Practica9_vhd_tst
+# -- Compiling architecture Practica9_arch of Practica9_vhd_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /i1=Practica9_vhd.sdo -L cycloneii -L gate_work -L work -voptargs="+acc"  Practica9_vht_tst
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /i1=Practica9_vhd.sdo -t 1ps Practica9_vht_tst 
+# ** Error: (vsim-3170) Could not find 'C:/altera/13.0sp1/SistemasI/Practica9/simulation/modelsim/gate_work.Practica9_vht_tst'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./Practica9_run_msim_gate_vhdl.do PAUSED at line 12
+vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /i1=Practica9_vhd.sdo -t 1ps gate_work.practica9_vhd_tst
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /i1=Practica9_vhd.sdo -t 1ps gate_work.practica9_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.practica9_vhd_tst(practica9_arch)
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.practica9(structure)
+# Loading cycloneii.cycloneii_lcell_ff(vital_lcell_ff)
+# Loading cycloneii.cycloneii_and1(altvital)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_clkctrl(vital_clkctrl)
+# Loading cycloneii.cycloneii_ena_reg(behave)
+# Loading instances from Practica9_vhd.sdo
+# Loading timing data from Practica9_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /practica9_vhd_tst File: C:/altera/13.0sp1/SistemasI/Practica9/Practica9.vht
+add wave  \
+sim:/practica9_vhd_tst/clk \
+sim:/practica9_vhd_tst/espera \
+sim:/practica9_vhd_tst/p0 \
+sim:/practica9_vhd_tst/p1 \
+sim:/practica9_vhd_tst/reset_n \
+sim:/practica9_vhd_tst/valid
+run
+run
+run
+run
+run
+run -all
+# ** Failure: Fin de la simulacion
+#    Time: 5010 ns  Iteration: 0  Process: /practica9_vhd_tst/always File: C:/altera/13.0sp1/SistemasI/Practica9/Practica9.vht
+# Break in Process always at C:/altera/13.0sp1/SistemasI/Practica9/Practica9.vht line 103

@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "Practica9")
-  (DATE "11/26/2020 00:16:52")
+  (DATE "11/26/2020 09:27:03")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition")
@@ -33,7 +33,7 @@
 
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\estado_act\.EP01\\)
+    (INSTANCE \\Detector_secu\|estado_act\.EP01\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1028:1028:1028) (1028:1028:1028))
@@ -49,7 +49,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\estado_act\.EP0\\)
+    (INSTANCE \\Detector_secu\|estado_act\.EP0\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1028:1028:1028) (1028:1028:1028))
@@ -65,7 +65,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\Selector2\~0\\)
+    (INSTANCE \\Detector_secu\|Selector2\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (188:188:188) (188:188:188))
@@ -81,7 +81,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\Selector2\~1\\)
+    (INSTANCE \\Detector_secu\|Selector2\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (192:192:192) (192:192:192))
@@ -96,7 +96,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\estado_act\.Reposo\\)
+    (INSTANCE \\Detector_secu\|estado_act\.Reposo\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1028:1028:1028) (1028:1028:1028))
@@ -112,7 +112,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\Selector1\~0\\)
+    (INSTANCE \\Detector_secu\|Selector1\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (191:191:191) (191:191:191))
@@ -128,7 +128,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\Selector1\~1\\)
+    (INSTANCE \\Detector_secu\|Selector1\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (187:187:187) (187:187:187))
@@ -143,7 +143,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\Selector0\~0\\)
+    (INSTANCE \\Detector_secu\|Selector0\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (188:188:188) (188:188:188))
@@ -159,7 +159,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\Selector0\~1\\)
+    (INSTANCE \\Detector_secu\|Selector0\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (182:182:182) (182:182:182))
@@ -175,7 +175,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\Selector0\~2\\)
+    (INSTANCE \\Detector_secu\|Selector0\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (191:191:191) (191:191:191))
@@ -381,7 +381,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\Selector3\~0\\)
+    (INSTANCE \\Detector_secu\|Selector3\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (164:164:164) (164:164:164))
@@ -396,7 +396,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\estado_act\.EP011\\)
+    (INSTANCE \\Detector_secu\|estado_act\.EP011\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1028:1028:1028) (1028:1028:1028))
@@ -412,7 +412,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\Selector4\~0\\)
+    (INSTANCE \\Detector_secu\|Selector4\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (187:187:187) (187:187:187))
@@ -427,7 +427,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\estado_act\.EP0110\\)
+    (INSTANCE \\Detector_secu\|estado_act\.EP0110\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1028:1028:1028) (1028:1028:1028))
@@ -453,7 +453,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\red\~I\\.asynch_inst)
+    (INSTANCE \\espera\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (PORT datain (262:262:262) (262:262:262))

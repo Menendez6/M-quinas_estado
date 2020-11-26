@@ -1,5 +1,5 @@
 Assembler report for Practica9
-Thu Nov 26 00:16:48 2020
+Thu Nov 26 09:26:56 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 26 00:16:48 2020 ;
+; Assembler Status      ; Successful - Thu Nov 26 09:26:56 2020 ;
 ; Revision Name         ; Practica9                             ;
 ; Top-level Entity Name ; Practica9                             ;
 ; Family                ; Cyclone II                            ;
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 26 00:16:46 2020
+    Info: Processing started: Thu Nov 26 09:26:52 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Practica9 -c Practica9
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4556 megabytes
-    Info: Processing ended: Thu Nov 26 00:16:48 2020
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Thu Nov 26 09:26:56 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

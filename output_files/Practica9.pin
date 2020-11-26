@@ -179,7 +179,7 @@ GND*                         : C20       :        :                   :         
 GND*                         : C21       :        :                   :         : 5         :                
 GND*                         : C22       :        :                   :         : 5         :                
 valid                        : D1        : output : 3.3-V LVTTL       :         : 2         : N              
-red                          : D2        : output : 3.3-V LVTTL       :         : 2         : N              
+espera                       : D2        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : D3        :        :                   :         : 2         :                
 GND*                         : D4        :        :                   :         : 2         :                
 GND*                         : D5        :        :                   :         : 2         :                
