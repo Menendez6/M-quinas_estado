@@ -1,0 +1,41 @@
+|Practica9
+reset_n => DetectorFlancobajada:DetectorFlanco_1.reset_n
+reset_n => DetectorFlancobajada:DetectorFlanco_2.reset_n
+reset_n => estado_act~3.DATAIN
+clk => DetectorFlancobajada:DetectorFlanco_1.clk
+clk => DetectorFlancobajada:DetectorFlanco_2.clk
+clk => estado_act~1.DATAIN
+p1 => DetectorFlancobajada:DetectorFlanco_1.e
+p0 => DetectorFlancobajada:DetectorFlanco_2.e
+valid <= valid.DB_MAX_OUTPUT_PORT_TYPE
+red <= red.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica9|DetectorFlancobajada:DetectorFlanco_1
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => Selector0.IN2
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => Selector2.IN0
+reset_n => estado_act~3.DATAIN
+clk => estado_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica9|DetectorFlancobajada:DetectorFlanco_2
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => Selector0.IN2
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => Selector2.IN0
+reset_n => estado_act~3.DATAIN
+clk => estado_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
